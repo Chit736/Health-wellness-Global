@@ -1,0 +1,11 @@
+# Health & Wellness Global
+
+ကျန်းမာရေးနှင့် ကျန်းမာသုခဆိုင်ရာ ပရောဂျက်များ
+
+## ရည်ရွယ်ချက်
+ဒီ repository မှာ ကျန်းမာရေးနဲ့ပတ်သက်တဲ့ project တွေ၊ code တွေကို စုစည်းထားပါတယ်။
+
+## စတင်အသုံးပြုနည်း
+```bash
+git clone https://github.com/Chit736/Health-wellness-Global.git
+cd Health-wellness-Global
