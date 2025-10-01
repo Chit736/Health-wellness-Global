@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health & Wellness Global</title>
+    <style>
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            text-align: center;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .header h1 {
+            color: #2c5530;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 1.2rem;
+        }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            color: #2c5530;
+            margin-bottom: 1rem;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.5rem;
+            }
+            
+            .feature-card {
+                padding: 1.5rem;
+            }
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1>🌿 Health & Wellness Global</h1>
+            <p>ကျန်းမာရေးနှင့် ကျန်းမာသုခဆိုင်ရာ ပလက်ဖောင်း</p>
+        </header>
+
+        <!-- Features Grid -->
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">💊</div>
+                <h3>ကျန်းမာရေးအကြံပြုချက်များ</h3>
+                <p>နေ့စဉ်ကျန်းမာရေးအကြံပြုချက်များ</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🏃‍♂️</div>
+                <h3>လေ့ကျင့်ခန်းများ</h3>
+                <p>အိမ်တွင်းလုပ်နိုင်သော လေ့ကျင့်ခန်းများ</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🥗</div>
+                <h3>အာဟာရချက်ပြုတ်နည်းများ</h3>
+                <p>ကျန်းမာရေးနဲ့ညီညွတ်သော အစားအစာများ</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2025 Health & Wellness Global. All rights reserved.</p>
+            <p>Contact: health@wellnessglobal.com</p>
+        </footer>
+    </div>
+
+    <script>
+        // Interactive Features
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add click effects to feature cards
+            const cards = document.querySelectorAll('.feature-card');
+            cards.forEach(card => {
+                card.addEventListener('click', function() {
+                    this.style.backgroundColor = '#f0f8f0';
+                    setTimeout(() => {
+                        this.style.backgroundColor = '';
+                    }, 300);
+                });
+            });
+
+            // Welcome message
+            setTimeout(() => {
+                alert('Welcome to Health & Wellness Global! 🌟');
+            }, 1000);
+        });
+
+        // Mobile menu functionality (for future use)
+        function toggleMenu() {
+            const nav = document.querySelector('.nav-menu');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
